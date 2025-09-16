@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Feira de Profissões SENAI 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #0066b3;
+        }
+        
+        h1 {
+            color: #0066b3;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .intro {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .nav-links a {
+            color: #0066b3;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            background-color: #e6f0fa;
+        }
+        
+        .nav-links a:hover {
+            background-color: #cce5ff;
+        }
+        
+        form {
+            margin-bottom: 30px;
+        }
+        
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        legend {
+            font-weight: bold;
+            color: #0066b3;
+            padding: 0 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #0066b3;
+            outline: none;
+        }
+        
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        
+        .radio-group label, .checkbox-group label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .btn-submit {
+            background-color: #0066b3;
+            color: white;
+        }
+        
+        .btn-submit:hover {
+            background-color: #005599;
+        }
+        
+        .btn-reset {
+            background-color: #cc0000;
+            color: white;
+        }
+        
+        .btn-reset:hover {
+            background-color: #aa0000;
+        }
+        
+        .table-container {
+            margin-top: 30px;
+        }
+        
+        h2 {
+            color: #0066b3;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #0066b3;
+            color: white;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .required {
+            color: #cc0000;
+        }
+        footer {
+            margin : 1% auto;
+            text-align: center;
+            padding: 0%;
+          
+        
+        }
+        
+        @media (max-width: 600px) {
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .radio-group, .checkbox-group {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Inscrição para Feira de Profissões 2025</h1>
+            <p class="intro">Preencha o formulário abaixo para se inscrever e participar das palestras e workshops da Feira de Profissões 2025.</p>
+            
+            <div class="nav-links">
+                <a href="Feiradaandreza.html" class="botao">Pagina Inicial</a>
+                <a href="#dados-pessoais">Dados Pessoais</a>
+                <a href="#preferencias">Preferências</a>
+                <a href="#mensagem">Mensagem</a>
+                <a href="#tabela-profissoes">Profissões</a>
+            </div>
+        </header>
+
+        <form method="post" action="#">
+            <!-- Dados Pessoais -->
+            <fieldset id="dados-pessoais">
+                <legend>Dados Pessoais</legend>
+                
+                <div class="form-group">
+                    <label for="nome">Nome Completo <span class="required">*</span></label>
+                    <input type="text" id="nome" name="nome" required minlength="5" maxlength="100">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone <span class="required">*</span></label>
+                    <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\)\d{4,5}-\d{4}" title="Formato: (XX)XXXXX-XXXX" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Formato: XXX.XXX.XXX-XX">
+                </div>
+                
+                <div class="form-group">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" title="Formato: XXXXX-XXX">
+                </div>
+            </fieldset>
+
+            <!-- Preferências -->
+            <fieldset id="preferencias">
+                <legend>Preferências</legend>
+                
+                <div class="form-group">
+                    <label for="area">Área de Interesse <span class="required">*</span></label>
+                    <select id="area" name="area" required>
+                        <option value="">Selecione uma área</option>
+                        <option value="tec">Tecnologia da Informação</option>
+                        <option value="eng">Engenharias</option>
+                        <option value="saude">Saúde e Medicina</option>
+                        <option value="humanas">Ciências Humanas</option>
+                        <option value="artes">Artes e Design</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Turno Preferido <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="turno" value="manha" required> Manhã</label>
+                        <label><input type="radio" name="turno" value="tarde"> Tarde</label>
+                        <label><input type="radio" name="turno" value="noite"> Noite</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Interesses (marque todas as opções que deseja)</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interesses" value="palestras"> Palestras</label>
+                        <label><input type="checkbox" name="interesses" value="workshops"> Workshops</label>
+                        <label><input type="checkbox" name="interesses" value="orientacao"> Orientação Profissional</label>
+                        <label><input type="checkbox" name="interesses" value="empresas"> Contato com Empresas</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Mensagem e Arquivo -->
+            <fieldset id="mensagem">
+                <legend>Mensagem e Arquivos</legend>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem <span class="required">*</span></label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required minlength="10"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="arquivo">Enviar arquivo (apenas PDF)</label>
+                    <input type="file" id="arquivo" name="arquivo" accept=".pdf">
+                </div>
+            </fieldset>
+
+            <!-- Botões -->
+            <div class="btn-group">
+                <button type="submit" class="btn-submit">Enviar Inscrição</button>
+                <button type="reset" class="btn-reset">Limpar Formulário</button>
+            </div>
+        </form>
+
+        <!-- Tabela de Profissões -->
+        <div class="table-container" id="tabela-profissoes">
+            <h2>Exemplos de Profissões e Palestras</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Área</th>
+                        <th>Profissões</th>
+                        <th>Palestras Disponíveis</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tecnologia</td>
+                        <td>Desenvolvedor, Analista de Sistemas</td>
+                        <td>O Futuro da Programação</td>
+                        <td>09:00 - 10:30</td>
+                    </tr>
+                    <tr>
+                        <td>Engenharia</td>
+                        <td>Engenheiro Mecânico, Elétrico</td>
+                        <td>Indústria 4.0 no Brasil</td>
+                        <td>11:00 - 12:30</td>
+                    </tr>
+                    <tr>
+                        <td>Saúde</td>
+                        <td>Enfermeiro, Técnico em Enfermagem</td>
+                        <td>Carreiras na Área da Saúde</td>
+                        <td>14:00 - 15:30</td>
+                    </tr>
+                    <tr>
+                        <td>Administração</td>
+                        <td>Administrador, Gestor de RH</td>
+                        <td>Gestão de Pessoas</td>
+                        <td>16:00 - 17:30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Validação adicional para o formulário
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            
+            form.addEventListener('submit', function(e) {
+                let valid = true;
+                
+                // Verificar se pelo menos um interesse foi selecionado
+                const interesses = document.querySelectorAll('input[name="interesses"]:checked');
+                if (interesses.length === 0) {
+                    alert('Por favor, selecione pelo menos um interesse.');
+                    valid = false;
+                }
+                
+                // Verificar se o arquivo é PDF (se foi selecionado)
+                const arquivo = document.getElementById('arquivo');
+                if (arquivo.files.length > 0) {
+                    const fileName = arquivo.files[0].name;
+                    const extension = fileName.split('.').pop().toLowerCase();
+                    
+                    if (extension !== 'pdf') {
+                        alert('Por favor, envie apenas arquivos PDF.');
+                        valid = false;
+                    }
+                }
+                
+                if (!valid) {
+                    e.preventDefault();
+                }
+            });
+            
+            // Formatação automática do telefone
+            const telefone = document.getElementById('telefone');
+            telefone.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                
+                if (value.length <= 11) {
+                    value = value.replace(/^(\d{2})(\d)/g, '($1)$2');
+                    value = value.replace(/(\d{5})(\d)/, '$1-$2');
+                }
+                
+                e.target.value = value;
+            });
+            
+            // Formatação automática do CPF
+            const cpf = document.getElementById('cpf');
+            cpf.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                
+                if (value.length <= 11) {
+                    value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                    value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                    value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+                }
+                
+                e.target.value = value;
+            });
+            
+            // Formatação automática do CEP
+            const cep = document.getElementById('cep');
+            cep.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                
+                if (value.length <= 8) {
+                    value = value.replace(/(\d{5})(\d)/, '$1-$2');
+                }
+                
+                e.target.value = value;
+            });
+        });
+    </script>
+    <footer>
+        <p>Feira de Profissões 2025 - Escola da Andreza Educação para o Futuro</p>
+        <p>Contato: Andrezaproflinda@gmail.com | 11 3456-7890</p>
+    </footer>
+</body>
+</html>
